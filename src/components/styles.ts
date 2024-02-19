@@ -94,7 +94,7 @@ export const FormWrapper = styled.View`
     flex: 1 0 0;
     border-radius: 8px;
     border: 1px solid var(--Gray-700, #0d0d0d);
-    /* background: var(--Gray-500, #262626); */
+    background: #262626;
     color: var(--Gray-100, #f2f2f2);
   }
 
@@ -152,5 +152,5 @@ export const TasksDivItem = styled(CustomDivider)<IImageProps>`
   svg {
     cursor: pointer;
   }
-  /* background: var(--Gray-500, #262626);   */
+  background: #262626;
 `;
