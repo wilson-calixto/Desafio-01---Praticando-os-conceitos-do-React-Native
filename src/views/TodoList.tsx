@@ -1,8 +1,9 @@
 import { useCallback, useState } from 'react'
-import { NewTask } from '../components/NewTask'
+// import { NewTask } from '../components/NewTask'
 import { Header } from '../components/Header';
 import { MainCard } from '../components/styles';
 import { ITask, TaskCard } from '../components/TaskCard';
+import { NewTask } from '../components/NewTask';
 
 function TodoList() {
   const [taskList, setTaskList] = useState<ITask[]>([])

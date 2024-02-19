@@ -1,7 +1,7 @@
 import { TasksDivItem } from './styles';
 import { Trash } from 'phosphor-react'
-import Unchecked from '../../assets/unchecked.svg';
-import Checked from '../../assets/checked.svg';
+import Unchecked from '../assets/unchecked.svg';
+import Checked from '../assets/checked.svg';
 import { ITask } from './TaskCard';
 
 

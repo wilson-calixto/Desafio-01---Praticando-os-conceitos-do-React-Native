@@ -1,5 +1,5 @@
 import { CustomSimpleGrayTypography, CustomSimpleTypography, SimpleDivider } from './styles';
-import clipBoard from '../../assets/clipboard.svg'
+import clipBoard from '../assets/clipboard.svg'
 
 
 export function WithoutTasks() {
