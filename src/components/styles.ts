@@ -7,8 +7,6 @@ height: 100vh;
   display: row;
   align-items: center;
   justify-content: center;
-
-
 `
 
 export const CustomHeader = styled.header`
