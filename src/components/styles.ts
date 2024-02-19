@@ -12,7 +12,7 @@ export const Main = styled.View`
 export const CustomHeader = styled.View`
   height: 200px;
   flex: 1;
-  /* background: var(--Gray-700, #0D0D0D); */
+  background: #0d0d0d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +123,7 @@ export const CustomCount = styled.View`
   align-items: center;
   gap: 10px;
   border-radius: 999px;
-  //background: var(--Gray-400, #333);
+  background: #333;
   color: var(--Gray-200, #d9d9d9);
 `;
 
@@ -141,8 +141,8 @@ export const TasksDivItem = styled(CustomDivider)<IImageProps>`
   margin-bottom: 0rem;
   padding: 1rem;
   border-radius: 8px;
-  /* border: 1px solid var(--Gray-400, #333); */
-  /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06); */
+  border: 1px solid #333;
+  /* box-shadow: 0px 2px 8px 0px #000000; */
 
   label {
     color: ${(props) => (props.checked ? "#808080" : "#F2F2F2")};
