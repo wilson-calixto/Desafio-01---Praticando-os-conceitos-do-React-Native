@@ -141,8 +141,8 @@ export const TasksDivItem = styled(CustomDivider)<IImageProps>`
   margin-bottom: 0rem;
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid var(--Gray-400, #333);
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  /* border: 1px solid var(--Gray-400, #333); */
+  /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06); */
 
   label {
     color: ${(props) => (props.checked ? "#808080" : "#F2F2F2")};
