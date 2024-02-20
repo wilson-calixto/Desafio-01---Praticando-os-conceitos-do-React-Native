@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const Main = styled.View`
+export const Main = styled.TouchableOpacity`
   width: 100vw;
   height: 100vh;
   flex: 1;
@@ -9,9 +9,9 @@ export const Main = styled.View`
   justify-content: center;
 `;
 
-export const CustomHeader = styled.View`
-  height: 200px;
-  flex: 1;
+export const CustomHeader = styled.TouchableOpacity`
+  /* height: 200px; */
+  /* flex: 1; */
   background: #0d0d0d;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ interface ITypographyProps {
   variant: string;
 }
 
-export const CustomBlueTypography = styled.View<ITypographyProps>`
+export const CustomBlueTypography = styled.TouchableOpacity<ITypographyProps>`
   margin: 0;
   color: var(--Blue, #4ea8de);
   font-family: Inter;
@@ -38,7 +38,7 @@ export const CustomBlueTypography = styled.View<ITypographyProps>`
   line-height: normal;
 `;
 
-export const CustomSimpleTypography = styled.View`
+export const CustomSimpleTypography = styled.TouchableOpacity`
   margin: 0;
   color: var(--Gray-300, #808080);
   text-align: center;
@@ -58,13 +58,14 @@ export const CustomPurpleTypography = styled(
   color: var(--PurpleDark, #5e60ce);
 `;
 
-export const MainCard = styled.View`
-  padding: 0 352px 0 352px;
+export const MainCard = styled.TouchableOpacity`
+  /* padding: 0 352px 0 352px; */
 `;
 
-export const CustomDivider = styled.View`
+export const CustomDivider = styled.TouchableOpacity`
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   border-color: white;
   border-width: 10px;
   border-bottom: 10px;
@@ -81,10 +82,11 @@ export const SimpleDivider = styled(CustomDivider)`
   justify-content: center;
 `;
 
-export const FormWrapper = styled.View`
+export const FormWrapper = styled.TouchableOpacity`
   display: flex;
   justify-content: space-between;
   /* transform: translateY(-50%); */
+  margin-top: -28;
   input {
     display: flex;
     padding: 16px;
@@ -115,7 +117,7 @@ export const FormWrapper = styled.View`
   }
 `;
 
-export const CustomCount = styled.View`
+export const CustomCount = styled.TouchableOpacity`
   display: flex;
   padding: 2px 8px;
   flex-direction: column;
@@ -127,7 +129,7 @@ export const CustomCount = styled.View`
   color: var(--Gray-200, #d9d9d9);
 `;
 
-export const TasksDiv = styled.View`
+export const TasksDiv = styled.TouchableOpacity`
   display: flex;
   flex-direction: row;
   align-items: center;
