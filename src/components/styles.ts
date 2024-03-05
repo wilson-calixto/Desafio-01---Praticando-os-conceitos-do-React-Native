@@ -67,16 +67,17 @@ export const CustomPurpleTypography = styled(
 export const MainCard = styled.TouchableOpacity`
   /* padding: 0 352px 0 352px; */
   background-color: "#8257E5";
+  width: 1250px;
 `;
 
 export const CustomDivider = styled.TouchableOpacity`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  border-color: white;
-  border-width: 10px;
+  /* border-width: 10px; */
   border-bottom: 10px;
   margin-top: 1rem;
+  /* border: #0d0d0d; */
 `;
 
 export const SimpleDivider = styled(CustomDivider)`
@@ -106,13 +107,14 @@ export const CustomButton = styled.TouchableOpacity`
 `;
 export const FormWrapper = styled.TouchableOpacity`
   display: flex;
-  justify-content: space-between;
+  gap: 2;
   flex-direction: row;
 
   /* transform: translateY(-50%); */
   margin-top: -28;
   input {
     display: flex;
+    width: 100%;
     padding: 16px;
     gap: 8px;
     margin-right: 1rem;

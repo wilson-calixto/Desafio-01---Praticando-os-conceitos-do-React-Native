@@ -26,7 +26,6 @@ export function NewTask({ createTask }: NewTaskProps) {
         onChange={(event) => setText(event.target.value)}
       />
       <CustomButton onPress={(event) => handleCreateTask(event)}>
-        Criar
         <PlusCircle size={24} />
       </CustomButton>
     </FormWrapper>

@@ -17,7 +17,7 @@ export function CardHeader({ tasks }: CardHeaderProps) {
   return (
     <CustomDivider>
       <TasksDiv>
-        <CustomBlueTypography variant='small'>Tarefas criadas </CustomBlueTypography>
+        <CustomBlueTypography variant='small'>Criadas </CustomBlueTypography>
         <CustomCount>{createdTasks}</CustomCount>
       </TasksDiv>
 
