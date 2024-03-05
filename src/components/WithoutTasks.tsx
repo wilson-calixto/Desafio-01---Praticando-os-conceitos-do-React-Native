@@ -1,5 +1,6 @@
 import { CustomSimpleGrayTypography, CustomSimpleTypography, SimpleDivider } from './styles';
 import clipBoard from '../assets/clipboard.svg'
+import { Image } from 'react-native';
 
 
 export function WithoutTasks() {
@@ -7,7 +8,7 @@ export function WithoutTasks() {
   return (
     <>
       <SimpleDivider>
-        <img src={clipBoard} className="Clip Board" alt="Clipe Board" />
+        <Image source={clipBoard} />
       </SimpleDivider>
       <CustomSimpleTypography >
         Você ainda não tem tarefas cadastradas

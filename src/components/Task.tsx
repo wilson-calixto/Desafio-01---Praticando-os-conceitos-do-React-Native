@@ -1,8 +1,9 @@
 import { TasksDivItem } from './styles';
 import { Trash } from 'phosphor-react'
-import Unchecked from '../assets/unchecked.svg';
-import Checked from '../assets/checked.svg';
+import unchecked from '../assets/unchecked.png';
+import checked from '../assets/checked.png';
 import { ITask } from './TaskCard';
+import { Image, Pressable } from 'react-native';
 
 
 
@@ -18,13 +19,17 @@ export function Task({ item, checkedTask, deleteTask }: TasksProps) {
       <TasksDivItem key={item.toString()} checked={item.checked} >
         {
           item.checked ?
-            <img src={Checked} alt="React Logo" onClick={() => {
+            <Pressable onPress={() => {
               checkedTask(item.id);
-            }} />
+            }}>
+              <Image src={checked} />
+            </Pressable>
             :
-            <img src={Unchecked} alt="React Logo" onClick={() => {
+            <Pressable onPress={() => {
               checkedTask(item.id);
-            }} />
+            }}>
+              <Image src={unchecked} />
+            </Pressable>
         }
         <label htmlFor={item.text}> {item.text}</label><br></br>
         <Trash

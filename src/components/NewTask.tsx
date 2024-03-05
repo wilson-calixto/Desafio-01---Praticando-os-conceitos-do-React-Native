@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { PlusCircle } from 'phosphor-react'
-import { FormWrapper } from './styles';
+import { CustomButton, FormWrapper } from './styles';
+import { GestureResponderEvent } from 'react-native';
 
 interface NewTaskProps {
   createTask: (text: string) => void;
@@ -9,7 +10,7 @@ interface NewTaskProps {
 export function NewTask({ createTask }: NewTaskProps) {
   const [text, setText] = useState('');
 
-  function handleCreateTask(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+  function handleCreateTask(e: GestureResponderEvent) {
     e.preventDefault();
     if (text.length > 0) {
       createTask(text);
@@ -24,10 +25,10 @@ export function NewTask({ createTask }: NewTaskProps) {
         value={text}
         onChange={(event) => setText(event.target.value)}
       />
-      <button onClick={(event) => handleCreateTask(event)}>
+      <CustomButton onPress={(event) => handleCreateTask(event)}>
         Criar
         <PlusCircle size={24} />
-      </button>
+      </CustomButton>
     </FormWrapper>
   );
 }

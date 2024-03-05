@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
 
 export const Main = styled.TouchableOpacity`
   width: 100vw;
@@ -12,10 +13,15 @@ export const Main = styled.TouchableOpacity`
 export const CustomHeader = styled.TouchableOpacity`
   /* height: 200px; */
   /* flex: 1; */
-  background: #0d0d0d;
+  flex-direction: row;
+  background: #8257e5;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding-top: getStatusBarHeight(true) + 16;
+  padding-bottom: 60;
+  background-color: "#8257E5";
 
   img {
     margin-top: 5px;
@@ -60,6 +66,7 @@ export const CustomPurpleTypography = styled(
 
 export const MainCard = styled.TouchableOpacity`
   /* padding: 0 352px 0 352px; */
+  background-color: "#8257E5";
 `;
 
 export const CustomDivider = styled.TouchableOpacity`
@@ -70,7 +77,6 @@ export const CustomDivider = styled.TouchableOpacity`
   border-width: 10px;
   border-bottom: 10px;
   margin-top: 1rem;
-  margin-bottom: 4rem;
 `;
 
 export const SimpleDivider = styled(CustomDivider)`
@@ -82,15 +88,32 @@ export const SimpleDivider = styled(CustomDivider)`
   justify-content: center;
 `;
 
+export const CustomButton = styled.TouchableOpacity`
+  color: #f2f2f2;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #1e6f9f;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+`;
 export const FormWrapper = styled.TouchableOpacity`
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+
   /* transform: translateY(-50%); */
   margin-top: -28;
   input {
     display: flex;
     padding: 16px;
-    align-items: center;
     gap: 8px;
     margin-right: 1rem;
     flex: 1 0 0;
@@ -98,22 +121,6 @@ export const FormWrapper = styled.TouchableOpacity`
     border: 1px solid var(--Gray-700, #0d0d0d);
     background: #262626;
     color: var(--Gray-100, #f2f2f2);
-  }
-
-  button {
-    color: var(--Gray-100, #f2f2f2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    background: var(--Blue-Dark, #1e6f9f);
-    border: none;
-    font-size: 0.875rem;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 1rem;
-    cursor: pointer;
   }
 `;
 

@@ -1,11 +1,12 @@
-import rocketIcon from '../../assets/rocket.svg';
+import { Image } from 'react-native';
+import rocketIcon from '../assets/rocket.png';
 import { CustomBlueTypography, CustomPurpleTypography, CustomHeader } from './styles';
 
 
 export function Header() {
   return (
     <CustomHeader>
-      {/* <img src={rocketIcon} className="logo react" alt="React logo" /> */}
+      <Image src={rocketIcon} />
       <CustomBlueTypography variant='medium'>to</CustomBlueTypography>
       <CustomPurpleTypography variant='medium'>do</CustomPurpleTypography>
     </CustomHeader>
