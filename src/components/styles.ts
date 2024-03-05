@@ -105,6 +105,18 @@ export const CustomButton = styled.TouchableOpacity`
   padding: 1rem;
   cursor: pointer;
 `;
+export const CustomTextInput = styled.TextInput`
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  gap: 8px;
+  margin-right: 1rem;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #0d0d0d;
+  background: #262626;
+  color: #f2f2f2;
+`;
 export const FormWrapper = styled.TouchableOpacity`
   display: flex;
   gap: 2;

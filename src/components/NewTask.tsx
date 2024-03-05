@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PlusCircle } from 'phosphor-react'
-import { CustomButton, FormWrapper } from './styles';
+import { CustomButton, CustomTextInput, FormWrapper } from './styles';
 import { GestureResponderEvent } from 'react-native';
 
 interface NewTaskProps {
@@ -21,9 +21,9 @@ export function NewTask({ createTask }: NewTaskProps) {
 
   return (
     <FormWrapper>
-      <input placeholder='Adicione uma nova tarefa' type="text" id="ftask" name="ftask"
+      <CustomTextInput placeholder='Adicione uma nova tarefa' id="ftask"
         value={text}
-        onChange={(event) => setText(event.target.value)}
+        onChangeText={text => setText(text)}
       />
       <CustomButton onPress={(event) => handleCreateTask(event)}>
         <PlusCircle size={24} />
